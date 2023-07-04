@@ -66,9 +66,7 @@ lazy_static! {
         ].into_iter().collect();
 }
 
-/// this is for debug so far, maybe pretty feature in the future.
-#[allow(dead_code)]
-pub(crate) fn token_display(id: TokenId) -> &'static str {
+pub fn token_display(id: TokenId) -> &'static str {
     match id {
         // Token.
         T_EQL => "=",
